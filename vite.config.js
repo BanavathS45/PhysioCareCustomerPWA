@@ -8,12 +8,15 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'favicon.png', 'icons.svg'],
       manifest: {
-        name: 'PhysioCare Customer',
+        name: 'PhysioCare Customer Portal',
         short_name: 'PhysioCare',
         description: 'Your personal health companion for physiotherapy tracking and bookings.',
         theme_color: '#6366f1',
+        background_color: '#ffffff',
+        display: 'standalone',
+        start_url: '/',
         icons: [
           {
             src: 'pwa-192x192.png',
